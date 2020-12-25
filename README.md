@@ -4,6 +4,12 @@ There are still many open todos, but it is usable already.
 
 This is based on the Odin implementation by Tyler. He also has a [guide] on how to set this up.
 
+One change to `4coder_language_ids.cpp` is necessary:
+```cpp
+// Add this to the colors
+CUSTOM_ID(colors, defcolor_operator);
+```
+
 Once you have that setup, you can add Rust like this:
 ```bash
 cd custom/languages

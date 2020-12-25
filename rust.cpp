@@ -49,6 +49,10 @@ static FColor rust_get_token_color(Token token)
             if (token.sub_kind == TokenRustKind_IdentifierMacro)
                 color = defcolor_preproc;
         } break;
+        case TokenBaseKind_Operator:
+        {
+            color = defcolor_operator;
+        } break;
     }
     return(fcolor_id(color));
 }
